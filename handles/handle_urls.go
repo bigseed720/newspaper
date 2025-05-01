@@ -1,4 +1,4 @@
-package main
+package handles
 
 import (
 	"fmt"
@@ -8,11 +8,12 @@ import (
 
 
 
+
 func index(web http.ResponseWriter , req *http.Request){
-    fmt.Fprintf(web , readpage("assets/index.html"))
+    fmt.Fprintf(web , ReadPage("assets/index.html"))
 }
 
 
-func handle() {
+func Handle() {
 	http.HandleFunc("/" , index)
 }

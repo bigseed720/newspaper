@@ -1,4 +1,4 @@
-package main
+package handles
 
 import (
 	"os"
@@ -6,7 +6,7 @@ import (
 )
 
 
-func readpage(name string) string {
+func ReadPage(name string) string {
     data , err := os.ReadFile(name)
     if err != nil{
     panic(err)

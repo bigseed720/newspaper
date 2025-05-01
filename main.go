@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-
+	"newspaper/handles"
 )
 
 
@@ -12,6 +12,6 @@ import (
 
 
 func main(){
-	handle()
+	handles.Handle()
 	http.ListenAndServe("0.0.0.0:8000" , nil)
 }
